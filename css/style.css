@@ -1,258 +1,395 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.container{
-    width: 1170px;
-    margin: 0 auto;
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-.nav{
-    display: flex;
-    align-items: center;
+.nav {
+  display: flex;
+  align-items: center;
 }
-ul{
-    display: flex;
-    gap:49px ;
+ul {
+  display: flex;
+  gap: 49px;
 }
-.logo{
-    margin-right: 230px;
+.logo {
+  margin-right: 230px;
 }
-button{
-    margin-left: 208px;
-    padding: 13px 23px;
-    background-color:#5956E8 ;
-    border: none;
-    border-radius: 10px;
-    color:#ffffff ;
+button {
+  margin-left: 208px;
+  padding: 13px 23px;
+  background-color: #5956e8;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
 }
-.nav{
-    padding: 30px 0;
-    font-family: "Inter", sans-serif;
-    color: #181818;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0%;
-    line-height: auto;
+.nav {
+  padding: 30px 0;
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0%;
+  line-height: auto;
 }
 /* herosectionstyle */
-.hero-section{
-    padding:182px 0 ;
-    background-color:#5956E8 ;
-   
+.hero-section {
+  padding: 182px 0;
+  background-color: #5956e8;
 }
-.hero{
-     display: flex;
-    gap: 148px;
+.hero {
+  display: flex;
+  gap: 148px;
 }
-.hero h1{
-    font-family:  "Inter", sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 65px;
-    line-height: 80px;
-    letter-spacing: 0%;
-    margin-bottom: 25px;
-}
-.hero p{
-     font-family:  "Inter", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0%;
-    margin-bottom: 30px;
-    opacity: 100%;
-}
-.hero a{
+.hero h1 {
   font-family: "Inter", sans-serif;
-    color: #5956E8;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0%;
-    line-height: auto;  
-    padding: 13px 22px;
-    background-color: #ffffff;
-    border-radius: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 65px;
+  line-height: 80px;
+  letter-spacing: 0%;
+  margin-bottom: 25px;
+}
+.hero p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+  opacity: 100%;
+}
+.hero a {
+  font-family: "Inter", sans-serif;
+  color: #5956e8;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0%;
+  line-height: auto;
+  padding: 13px 22px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.heroImage {
+  animation: heroimage 10s 0.1s;
+}
+@keyframes heroimage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* ourservices */
-.ourservices{
-    padding: 100px 0;
+.ourservices {
+  padding: 100px 0;
 }
-.ourservices h2{
-     font-family: "Inter", sans-serif;
-    color: #181818;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 0%;
-    line-height: auto;  
-   text-align: center;
+.ourservices h2 {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  line-height: auto;
+  text-align: center;
 }
-.ourservices p{
-    font-family: "Inter", sans-serif;
-    color: #181818;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0%;
-    line-height: 27px;  
-    margin: 0 auto;
-    width: 542px;
-    text-align: center;
+.ourservices p {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 27px;
+  margin: 0 auto;
+  width: 542px;
+  text-align: center;
 }
-.ourservicescard{
-    display: flex;
-    gap: 30px;
-    width: 1170px;
-    flex-wrap: wrap;
+.ourservicescard {
+  display: flex;
+  gap: 30px;
+  width: 1170px;
+  flex-wrap: wrap;
+}
+.ourservicescard .commoncard {
+  padding: 68px 48px;
+  width: 270;
+  background-color: #ffffff;
 
-   
-    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-.ourservicescard .commoncard{
-    padding: 68px 48px;
-    width: 270;
-   
+.ourservicescard .commoncard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-.ourservicescard .commoncard h4{
-
-   font-family: "Inter", sans-serif;
-    color: #181818;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 0%;
-    line-height: auto;     
-
+.ourservicescard .commoncard h4 {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  line-height: auto;
 }
-.ourservicescard .commoncard p{
-    font-family: "Inter", sans-serif;
-    color: #181818;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0%;
-    line-height: 27px; 
-    text-align: start; 
-    width:274px ;
-    opacity: 70%;
-    
-   
+.ourservicescard .commoncard p {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 27px;
+  text-align: start;
+  width: 274px;
+  opacity: 70%;
 }
 /* our work portfolio */
-.workportfolio h4{
-    text-align: center;
-     font-family: "Inter", sans-serif;
-    color: #181818;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 0%;
-    line-height: auto;
-    margin-bottom: 20px;
-    
-}.workportfolio p{
-    font-family:  "Inter", sans-serif;
-    font-weight: 400;
-    color: #181818;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0%;
-    margin-bottom: 30px;
-    opacity: 70%;
-    text-align: center;
-    width: 542px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+.workportfolio h4 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  line-height: auto;
+  margin-bottom: 20px;
 }
-.portfolioCard{
-display: flex;
-gap: 30px;
-flex-wrap: wrap;
-margin-bottom: 100px;
-
+.workportfolio p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #181818;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+  opacity: 70%;
+  text-align: center;
+  width: 542px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
-.pCardCommon{
-  width: 270px; 
+.portfolioCard {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.pCardCommon {
+  width: 270px;
   position: relative;
-   
 }
-.gd:hover{
-    
-      cursor: pointer;
-      opacity: 0.8;
+.gd:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-.gd{
-   position: absolute;
-    padding:25px 40px ;
-    background-color: #5956E8;
-    bottom: 0;
-    margin: 20px;
-    border-radius: 10px;
-    opacity: 0;
+.gd {
+  position: absolute;
+  padding: 25px 40px;
+  background-color: #5956e8;
+  bottom: 0;
+  margin: 20px;
+  border-radius: 10px;
+  opacity: 0;
 }
-.gd h4{
-font-family: "Inter", sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0%;
-    line-height: auto;
+.gd h4 {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0%;
+  line-height: auto;
 }
-.gd p{
- font-family:  "Inter", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0%;
-    margin-bottom: 30px;
-    opacity: 100%;
+.gd p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+  opacity: 100%;
 }
 /* our expert team */
-.ourExpertTeam{
-    padding: 0 0 142px 0;
+.ourExpertTeam {
+  padding: 0 0 142px 0;
 }
-.ourExpertTeam h4{
- text-align: center;
-     font-family: "Inter", sans-serif;
-    color: #181818;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 0%;
-    line-height: auto;
-    margin-bottom: 20px;
+.ourExpertTeam h4 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  line-height: auto;
+  margin-bottom: 20px;
 }
-.ourExpertTeam p{
- font-family:  "Inter", sans-serif;
-    font-weight: 400;
-    color: #181818;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0%;
-    margin-bottom: 30px;
-    opacity: 100%;
-     text-align: center;
-    width: 542px;
-    margin: 0 auto;
-    
+.ourExpertTeam p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #181818;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+  opacity: 100%;
+  text-align: center;
+  width: 542px;
+  margin: 0 auto;
 }
-.memeberCommon{
-    position: relative;
+.teamMembers {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 142px;
+}
+.memeberCommon {
+  position: relative;
 }
 
-.bg:hover::after{
-     content: "";
-    position: absolute;
-    background: linear-gradient(135deg, rgba(95, 86, 232, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  
-    height: 100%;
-    width: 100%;
+.bg {
 }
-.bg{
+.bg:hover::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, transparent 70%, #7b61ff 100%);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+}
+/* ourlatestnesws */
+.ourLn {
+  margin-bottom: 100px;
+}
+.ourLn h1 {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  line-height: auto;
+  text-align: center;
+}
+.ourLn p {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 27px;
+  margin: 20px auto 50px;
+  width: 542px;
+  text-align: center;
+}
+.ourLncard {
+  display: flex;
+  gap: 30px;
+}
+.ourLNCcommon {
+  width: 332px;
+  padding: 17px 19px 46px 19px;
+  border-radius: 10px;
+  background-color: #ffffff;
 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.ourLNCcommon:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.ourLNCcommon h6 {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  line-height: auto;
+  padding: 10px 45px 0px 16px;
+  width: 265px;
+  margin: 0 auto;
+}
+.ourLNCcommon p {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 27px;
+  text-align: justify;
 
+  width: 300px;
+}
+.ourLNCcommon a {
+  font-family: "Inter", sans-serif;
+  color: #5956e8;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 27px;
+  padding-left: 16px;
+}
+/* footer */
+.footersection {
+  background-color: #5956e81a;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 100px 0;
+  gap: 93px;
+}
+.footercommon h6 {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  line-height: auto;
+}
+.footercommon a {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 35px;
+}
+.footercommon p {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 27px;
+}
+.logocreative {
+}
+.socailicon {
+}
+.company {
+  display: flex;
+  flex-direction: column;
+}
+.Product {
+  display: flex;
+  flex-direction: column;
+}
+.Support {
+  display: flex;
+  flex-direction: column;
+}
+.Contact {
+  display: flex;
+  flex-direction: column;
 }
